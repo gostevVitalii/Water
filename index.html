@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Water.</a>
+            <div class="toggle" onclick="menuToggle();">
+            </div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>Happiness... <br><span>Crystal clear ocean water.</span></h2>
+        </div>
+        <video src="/source/video/water.mp4" autoplay muted loop></video>
+    </section>
+
+
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
